@@ -1,0 +1,12 @@
+#include "config.h"
+
+const char *deviceName = "Home Climate";
+
+const char *ssid = "<SSID>";
+const char *password = "<PASSWORD>";
+
+const char *mqttServer = "<MQTT_SERVER>";
+const int mqttPort = <MQTT_PORT>;
+
+const unsigned long myChannelNumber = <THINGSPEAK_CHANNEL_NUMBER>;
+const char *myWriteAPIKey = "<THINGSPEAK_WRITE_API_KEY>";
