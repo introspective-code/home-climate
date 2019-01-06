@@ -40,14 +40,16 @@ void loop() {
   float temperature = dht.readTemperature();
   float humidity = dht.readHumidity();
 
-  Serial.println("Temperature: ");
-  Serial.println(temperature);
-  Serial.println("Humidity: ");
-  Serial.println(humidity);
+  delay(15000);
+
+  // Serial.println("Temperature: ");
+  // Serial.println(temperature);
+  // Serial.println("Humidity: ");
+  // Serial.println(humidity);
 
   ThingSpeak.setField(1, temperature);
   ThingSpeak.setField(2, humidity);
   ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
 
-  delay(30000);
+  delay(15000);
 }
